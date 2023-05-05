@@ -1,0 +1,79 @@
+/* Help with object-fit/object-position polyfilling
+-------------------------------------------------- */
+[data-object-fit='contain'] {
+  object-fit: contain;
+}
+
+[data-object-fit='cover'] {
+  object-fit: cover;
+}
+
+[data-object-position='top'] {
+  object-position: top;
+}
+
+[data-object-position='center'] {
+  object-position: center;
+}
+
+[data-object-position='bottom'] {
+  object-position: bottom;
+}
+
+[data-object-position='top left'] {
+  object-position: top left;
+}
+
+[data-object-position='top center'] {
+  object-position: top center;
+}
+
+[data-object-position='top right'] {
+  object-position: top right;
+}
+
+[data-object-position='center left'] {
+  object-position: center left;
+}
+
+[data-object-position='center center'] {
+  object-position: center center;
+}
+
+[data-object-position='center right'] {
+  object-position: center right;
+}
+
+[data-object-position='bottom left'] {
+  object-position: bottom left;
+}
+
+[data-object-position='bottom center'] {
+  object-position: bottom center;
+}
+
+[data-object-position='bottom right'] {
+  object-position: bottom right;
+}
+
+.-ase { /* align-self end */
+  align-self: end;
+}
+
+/* Visually hidden
+-------------------------------------------------- */
+.visuallyhidden,
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.ts-noselect {
+  user-select: none;
+}

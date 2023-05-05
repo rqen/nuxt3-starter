@@ -1,0 +1,26 @@
+/* @media screen {
+  .printable {
+    display: none;
+  }
+}
+
+@media print {
+  #__nuxt {
+    display: none;
+  }
+
+  .printable {
+    & * {
+      animation: none !important;
+      transition: none !important;
+    }
+
+    & .no-print {
+      display: none !important;
+    }
+
+    & img {
+      display: block !important;
+    }
+  }
+} */

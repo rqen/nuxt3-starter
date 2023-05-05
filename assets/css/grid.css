@@ -1,0 +1,55 @@
+:root {
+  --grid-margin: units(1.6);
+  --grid-gap: units(1.2);
+  --grid-cols: 12;
+  --gutter: var(--grid-gap);
+  --col: (100vw - var(--grid-margin) * 2 - (var(--grid-cols) - 1) * var(--grid-gap)) / var(--grid-cols);
+  --cols: calc(var(--col) + var(--gutter));
+
+  @media (--lg) {
+    --grid-margin: units(1.6);
+    --grid-gutter: units(1.6);
+  }
+
+  @media (--page-max) {
+    --grid-margin: units(12.8);
+    --grid-gutter: units(2.4);
+  }
+}
+
+.cols-1 {
+  width: cols(cols-amount(1));
+}
+.cols-2 {
+  width: cols(cols-amount(2));
+}
+.cols-3 {
+  width: cols(cols-amount(3));
+}
+.cols-4 {
+  width: cols(cols-amount(4));
+}
+.cols-5 {
+  width: cols(cols-amount(5));
+}
+.cols-6 {
+  width: cols(cols-amount(6));
+}
+.cols-7 {
+  width: cols(cols-amount(7));
+}
+.cols-8 {
+  width: cols(cols-amount(8));
+}
+.cols-9 {
+  width: cols(cols-amount(9));
+}
+.cols-10 {
+  width: cols(cols-amount(10));
+}
+.cols-11 {
+  width: cols(cols-amount(11));
+}
+.cols-12 {
+  width: cols(cols-amount(12));
+}

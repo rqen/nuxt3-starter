@@ -1,0 +1,48 @@
+/* :root {
+  --site-spacing: 15px;
+
+  @media (--sm) {
+    --site-spacing: 25px;
+  }
+
+  @media (--md) {
+    --site-spacing: 40px;
+  }
+} */
+
+:root {
+  --site-spacing-s: 12px;
+  --site-spacing-m: 24px;
+
+  @media (--xl) {
+    --site-spacing-s: 24px;
+    --site-spacing-m: 36px;
+  }
+}
+
+:root {
+  --module-spacing: 20px;
+
+  @media (--xl) {
+    --module-spacing: 40px;
+  }
+
+  @media (--page-max) {
+    --module-spacing: 5vh;
+  }
+}
+
+@for $i from 1 to 12 {
+  .mt-$(i) {
+    margin-top: units($(i));
+  }
+  .mb-$(i) {
+    margin-bottom: units($(i));
+  }
+  .pt-$(i) {
+    padding-top: units($(i));
+  }
+  .pb-$(i) {
+    padding-bottom: units($(i));
+  }
+}

@@ -1,0 +1,144 @@
+
+@font-face {
+  font-family: 'Simula';
+  src: local('Simula'),
+    url('assets/fonts/Simula-Book.ttf') format('truetype'),
+    url('assets/fonts/Simula-Book.woff2') format('woff2'),
+    url('assets/fonts/Simula-Book.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Simula-italic';
+  src: local('Simula-italic'),
+    url('assets/fonts/Simula-BookItalic.ttf') format('truetype'),
+    url('assets/fonts/Simula-BookItalic.woff2') format('woff2'),
+    url('assets/fonts/Simula-BookItalic.woff') format('woff');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Akkurat';
+  src: local('Akkurat'),
+    url('assets/fonts/lineto-akkurat-regular.woff2') format('woff2'),
+    url('assets/fonts/lineto-akkurat-regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* Base */
+:root {
+  --simula: 'Simula', serif;
+  --simula-italic: 'Simula-italic', serif;
+  --akkurat: 'Akkurat', sans-serif;
+
+  /* heading styles */
+  --ts-h1-size: units(8);
+  --ts-h2-size: units(6.4);
+  --ts-h3-size: units(5);
+  --ts-h4-size: units(4);
+  --ts-h5-size: units(3.2);
+  --ts-h6-size: units(2.2);
+
+  /* subheadings styles */
+  --ts-subhead-1-size: units(1.6);
+  --ts-subhead-2-size: units(1.8);
+
+  /* body styles */
+  --ts-body-1-size: units(1.4);
+  --ts-body-2-size: units(1.6);
+  --ts-body-a-size: units(1.8);
+
+  /* other styles */
+  --ts-trumpet-size: units(1.2);
+  --ts-button-size: units(1.6);
+  --ts-button-height: units(3);
+  --ts-tag-size: units(1.2);
+  --ts-tag-height: units(2);
+  --ts-tag-l-size: units(1.8);
+  --ts-tag-l-height: units(2.6);
+
+  .ts-h1,
+  .ts-h2,
+  .ts-h3,
+  .ts-h4,
+  .ts-h5,
+  .ts-h6,
+  .ts-subhead-1,
+  .ts-subhead-2,
+  .ts-button,
+  .ts-tag,
+  .ts-tag-l {
+    font-family: var(--simula);
+  }
+
+  .ts-subhead-i{
+    font-family: var(--simula-italic);
+  }
+
+  .ts-body-1,
+  .ts-body-2,
+  .ts-body-a,
+  .ts-trumpet {
+    font-family: var(--akkurat);
+  }
+
+  .ts-h1 {
+    font-size: var(--ts-h1-size);
+    line-height: 100%;
+  }
+  .ts-h2 {
+    font-size: var(--ts-h2-size);
+    line-height: 100%;
+  }
+  .ts-h3 {
+    font-size: var(--ts-h3-size);
+    line-height: 100%;
+  }
+  .ts-h4 {
+    font-size: var(--ts-h4-size);
+    line-height: 100%;
+  }
+  .ts-h5 {
+    font-size: var(--ts-h5-size);
+    line-height: 100%;
+  }
+  .ts-h6 {
+    font-size: var(--ts-h6-size);
+    line-height: 100%;
+  }
+  .ts-subhead-1 {
+    font-size: var(--ts-subhead-1-size);
+  }
+  .ts-subhead-i {
+    font-size: var(--ts-subhead-1-size);
+  }
+  .ts-subhead-2 {
+    font-size: var(--ts-subhead-2-size);
+  }
+  .ts-body-1 {
+    font-size: var(--ts-body-1-size);
+  }
+  .ts-body-2 {
+    font-size: var(--ts-body-2-size);
+  }
+  .ts-body-a {
+    font-size: var(--ts-body-a-size);
+  }
+  .ts-trumpet {
+    font-size: var(--ts-trumpet-size);
+  }
+  .ts-button {
+    font-size: var(--ts-button-size);
+    line-height: var(--ts-button-height);
+  }
+  .ts-tag {
+    font-size: var(--ts-tag-size);
+    line-height: var(--ts-tag-height);
+  }
+  .ts-tag-l {
+    font-size: var(--ts-tag-l-size);
+    line-height: var(--ts-tag-l-height);
+  }
+}

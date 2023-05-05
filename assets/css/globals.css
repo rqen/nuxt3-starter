@@ -1,0 +1,137 @@
+:root,
+*:after,
+*:before {
+  --page-transition-duration: 0.2s;
+  --page-transition: var(--page-transition-duration) var(--ease-in-out);
+
+  --ease-in-out: cubic-bezier(0.83, 0, 0.17, 1);
+  --ease-in-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-quint: cubic-bezier(0.64, 0, 0.78, 0);
+
+  --stroke-light: 1px solid var(--light-stroke);
+  --stroke-dark: 1px solid var(--dark-stroke);
+}
+
+html {
+  font-size: zoomable(20px);
+
+  ::selection {
+    background: var(--black);
+    color: var(--white);
+  }
+
+  body {
+    transition: background-color .25s ease;
+  }
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--black);
+  background-color: var(--off-white);
+
+  font-family: 'Mabry', sans-serif;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-rendering: geometricPrecision;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input,
+select {
+  touch-action: manipulation;
+}
+
+svg {
+  shape-rendering: geometricPrecision;
+}
+
+button {
+  font: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: currentColor;
+  touch-action: manipulation;
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+
+a {
+  color: currentColor;
+}
+
+p > a {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+/* for development */
+code {
+  font-size: 12px;
+  display: inline-block;
+  font-family: 'Menlo', 'Courier New', monospace;
+  color: #1075ff;
+  background: #f4f4f4;
+  padding: 0.2em;
+  border-radius: 0.2em;
+
+  max-width: calc(100% - 0.4em);
+  word-break: break-word;
+  overflow: hidden;
+
+  pre {
+    font-family: inherit;
+  }
+}
+
+img {
+  user-select: none;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+label[for] {
+  cursor: pointer;
+}
+
+.slideup-enter-active {
+  transition:
+    transform .45s ease-out,
+    opacity .45s ease-out;
+}
+.slideup-leave-active {
+  transition:
+    transform .45s ease-out,
+    opacity .45s ease-out;
+}
+.slideup-enter-from,
+.slideup-leave-to {
+  transform: translateY(100%);
+  opacity: 0;
+}
